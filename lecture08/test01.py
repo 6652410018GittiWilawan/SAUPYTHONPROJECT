@@ -1,0 +1,42 @@
+#list
+my_list = [10,20,30,'Yo',True,[20,"Wass"]]
+print (my_list)
+print (len(my_list))
+
+
+#Tuple 
+my_tuple = (10,20,30,'Yo',True,(20,"Wass"))
+print (my_tuple)
+print (len(my_tuple))
+
+
+#Set ไม่มีลำดับ
+my_set = {10,20,10,'Yo',True}
+print(my_set)
+print (len(my_set))
+
+for data in my_set :
+    print(data,end='/')
+
+list_fr_set = list(my_set)
+print(list_fr_set)
+my_set = set(list_fr_set)
+print(my_set)
+
+my_set.clear()
+print(len(my_set))
+
+
+my_set1 = {10,20,30,'Hi'}
+my_set2 = {10,"Yo","Hi",True}
+
+my_set1.add(999)
+print(my_set)
+my_set1.remove("Hi")
+print(my_set1)
+
+print(my_set1.intersection(my_set2))
+print(my_set1.union(my_set2))
+
+# len,min,max
+# print (min(my_set2)) error
